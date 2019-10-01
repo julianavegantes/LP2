@@ -1,0 +1,32 @@
+<html>
+<head> 
+<title> adivinhe o numero </title>
+</head>
+
+<script>
+var numeroPensado = Math.round(Math.random()*3);
+var tentativa = 1;
+
+while(tentativa <= 3){
+var numeroDigitado = prompt('digite um numero:');
+console.log('numero digitado: ' + numeroDigitado);
+
+if(numeroDigitado == numeroPensado){
+console.log('numeros igualinhos');
+break;
+}
+else{
+console.log('numeros diferente');
+}
+
+tentativa++;
+
+
+}
+
+console.log("numero pensado: " + numeroPensado);
+
+
+</script>
+
+</html>
